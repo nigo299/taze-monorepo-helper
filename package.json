@@ -1,0 +1,35 @@
+{
+  "name": "taze-monorepo-helper",
+  "version": "1.0.3",
+  "description": "A helper tool for updating dependencies in monorepo projects using taze",
+  "type": "module",
+  "bin": {
+     "taze-monorepo": "./dist/cli.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "glob": "^10.3.10",
+    "inquirer": "^9.2.12",
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "taze",
+    "monorepo",
+    "dependencies",
+    "update"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
